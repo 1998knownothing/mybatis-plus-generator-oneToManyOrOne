@@ -42,13 +42,13 @@ public class MPGenerator {
 	public static GlobalConfig getGlobalConfig() {
 		GlobalConfig globalConfig = new GlobalConfig();
 		//是否开启swagger2模式
-		globalConfig.setSwagger2(true);
+		//globalConfig.setSwagger2(true);
 		//是否生成BaseResultMap
 		globalConfig.setBaseResultMap(true);
 		//是否生成baseColumnList
 		globalConfig.setBaseColumnList(true);
 		//作者
-		globalConfig.setAuthor("liuye");
+		globalConfig.setAuthor("ly");
 		//生成完成后是否打开生成目录
 //		globalConfig.setOpen(true);
 		//是否覆盖已有文件
@@ -125,9 +125,9 @@ public class MPGenerator {
 		//Controller父类
 		//strategyConfig.setSuperControllerClass("");
 		//自动生成哪些表
-		//strategyConfig.setInclude("student");
+		strategyConfig.setInclude("process_callback");
 		//不生成哪些表
-		strategyConfig.setExclude(null);
+		//strategyConfig.setExclude("x");
 		return strategyConfig;
 	}
 	
@@ -135,7 +135,7 @@ public class MPGenerator {
 	public static PackageConfig getPackageConfig() {
 		PackageConfig packageConfig = new PackageConfig();
 		//父包名
-		packageConfig.setParent("com.reshui.generator.test");
+		packageConfig.setParent("com.highjet.pushserver");
 		//entity包名
 		//packageConfig.setEntity("modules");
 		//mapper包名-默认mapper
